@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Glowing Inputs Registration Form UI</title>
+    <link rel="stylesheet" href="regis.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-form">
+      <div class="text">REGISTRATION</div>
+      <form onsubmit="return validateLogin()">
+        <div class="field">
+          <div class="fas fa-envelope"></div>
+          <input
+            type="text"
+            placeholder="Email or Phone"
+            id="usernameInput"
+            required
+          />
+        </div>
+        <div class="field">
+          <div class="fas fa-lock"></div>
+          <input
+            type="password"
+            placeholder="Password"
+            id="passwordInput"
+            required
+          />
+        </div>
+        <button type="submit">REGISTER</button>
+        <div class="link">
+          Already a Member?
+          <a href="login.css">Login now</a>
+        </div>
+      </form>
+    </div>
+    <div class="progress-bar" id="progressBar"></div>
+    <script src="register.js"></script>
+  </body>
+</html>
