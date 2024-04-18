@@ -31,13 +31,13 @@ document.getElementById("usernameInput").addEventListener("input", function() {
     setTimeout(() => {
       if (username === storedUsername && password === storedPassword) {
         alert("Login successful!");
-        window.location.href = "index.html"; // Change to your dashboard page
+        window.location.href = "index.html"; 
       } else {
         alert("Incorrect username or password.");
         progressBar.style.width = "0%";
       }
     }, 2000);
   
-    return false; // Prevent form from submitting normally
+    return false; 
   }
   
