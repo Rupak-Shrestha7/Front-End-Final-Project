@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>LOGIN Page</title>
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-form">
+      <div class="text">LOGIN</div>
+      <form onsubmit="return validateLogin()">
+        <div class="field">
+          <div class="fas fa-envelope"></div>
+          <input
+            type="text"
+            placeholder="Email or Phone"
+            id="usernameInput"
+            required
+          />
+        </div>
+        <div class="field">
+          <div class="fas fa-lock"></div>
+          <input
+            type="password"
+            placeholder="Password"
+            id="passwordInput"
+            required
+          />
+        </div>
+        <button type="submit">LOGIN</button>
+        <div class="link">
+          Not a member? <a href="regis.html">Signup now</a>
+        </div>
+      </form>
+    </div>
+    <div class="progress-bar" id="progressBar"></div>
+    <script src="JS/login.js"></script>
+  </body>
+</html>

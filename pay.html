@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="CSS/pay.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="payment-form">
+      <div class="text">Payment Details</div>
+      <form id="paymentForm">
+        <div class="field">
+          <div class="fas fa-user"></div>
+          <input type="text" placeholder="Cardholder's Name" required />
+        </div>
+        <div class="field">
+          <div class="fas fa-credit-card"></div>
+          <input type="text" placeholder="Card Number" required />
+        </div>
+        <div class="field small-field">
+          <div class="fas fa-calendar"></div>
+          <input type="text" placeholder="MM/YY" required />
+        </div>
+        <div class="field small-field">
+          <div class="fas fa-lock"></div>
+          <input type="text" placeholder="CVV" required />
+        </div>
+        <button type="submit">PAY NOW</button>
+      </form>
+    </div>
+    <script src="JS/pay.js"></script>
+  </body>
+</html>
